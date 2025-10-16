@@ -162,15 +162,15 @@
     <input type="tel" name="my-phone" id="my-phone" required aria-required="true">
   </div>
 
-  <fieldset id="memship">
-    <legend>Membership Type<span aria-hidden="true">*</span></legend>
-    <select id="select-membership">
+  <div>
+    <label for="select-membership">Membership Type<span aria-hidden="true">*</span></label>
+    <select id="select-membership" name="membership_type" required aria-required="true">
       <option value="" disabled selected>Select a Membership Option</option>
-      <option>Monthly Membership</option>
-      <option>Annual Membership</option>
-      <option>Family & Group Plans</option>
+      <option value="monthly">Monthly Membership</option>
+      <option value="annual">Annual Membership</option>
+      <option value="family">Family & Group Plans</option>
     </select>
-  </fieldset>
+  </div>
 
   <div>
     <label for="fitness-goals">Tell us about your fitness goals:</label><br>
